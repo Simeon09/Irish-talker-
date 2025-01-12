@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Sass/Styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="./blueimp-jQuery-File-Upload-b61ef97/"></script> -->
+    <script>
+        $("document").ready(function () {
+            $("#page").append("<p> first j quaery page </P>");
+        });
+
+        $("document").ready(function () {
+            $("#BTN").click(function () {
+                alert("login successfully");
+            });
+        });
+        $('document').ready(function () {
+             const $CourselWrapper =$('.courolselwrapper')
+             const $CourselItem = $('.courolselItem')
+            const totalitems = $CourselItem.length;
+            let currentindex = 0;
+
+            function courselUpdate() {
+                const offset = -currentindex * 100;
+                $CourselWrapper.css('transform', `translateX(${offset}%)`);
+            }
+            $('#prev').click(function () {
+                currentindex = (currentindex - 1 + totalitems) % totalitems;
+                courselUpdate();
+            })
+            $('.next').click(function () {
+                currentindex = (currentindex + 1) % totalitems;
+                courselUpdate();
+            });
+
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <section class="NavBar" id="page">
+        <div>
+            <h4 class="logo"> IRISH TALKERS</h4>
+        </div>
+        <div>
+            <ul>
+                <li> Home</li>
+                <li>News</li>
+                <li>Shows </li>
+                <li>About</li>
+                <li>Training </li>
+
+
+            </ul>
+
+        </div>
+        <div>
+            <button class="Btn_1" id="BTN">Login</button>
+        </div>
+
+
+
+    </section>
+    <section class="section2">
+        <div class="courolselwrapper" id="wrapper">
+            <div class="courolselItem" id="selItem">
+                <h1> Slide 1</h1>
+
+                <div class="SubSection">
+                    <div>
+
+                        <h2> The Number One Fear - Speaking in Public</h2>
+                        <p> That's right - it ranks even before death and is the thing that most people fear, even
+                            speaking
+                            before a small group.</p>
+                        <div>
+
+                            <button class="BTN2"> Browse podcast</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="touch">
+                    <img src="./touch.svg" alt="lady" />
+
+                </div>
+                <div>
+                    <img src="./lady.svg " class="ladyPhone" alt="lady" />
+                </div>
+            </div>
+            <div class="courolselItem" id="selItem">
+                <h1> Slide 2</h1>
+
+                <div class="Slide2">
+                    <div>
+
+                        <h2> The Number One Fear - Speaking in Public</h2>
+                        <p> That's right - it ranks even before death and is the thing that most people fear, even
+                            speaking
+                            before a small group.</p>
+                        <div>
+
+                            <button class="BTN2"> Browse podcast</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./touch.svg" class="touch2" alt="lady" />
+
+                </div>
+                <div>
+                    <img src="./lady.svg " class=" lady"alt="lady" />
+                </div>
+            </div>
+        </div>
+        <div class="controlsButtons">
+            <button id="prev">
+                < </button>
+                    <button class='next'> > </button>
+        </div>
+
+
+
+    </section>
+    <section class="section3">
+
+        <div class="cont1">
+
+            <img src="./Container.svg" alt="logo" />
+        </div>
+        <div>
+            <img src="./container 2.svg" alt="logo" />
+        </div>
+
+
+    </section>
+    <section class="section4">
+
+
+        <h2> Welcome to The Talk Show for Talkers</h2>
+        <p>
+            The Talk Show for Talkers is a Podcast covering everything to do with public speaking,
+            confidence and leadership. It is published in every Saturday as a podcast on Anchor,
+            iTunes and other podcasting platforms as well as on this website.
+        </p>
+        <p class="p2">
+            The show is hosted by experienced Toastmasters, Paul O'Mahony,
+            James Finnegan and Moira O'Brien. First broadcast in November 2014,
+            the Talk Show is now in its 9th season with over 360 shows (as of January 2023)
+            and is listened to in at least 80 countries with Podcast
+            downloads exceeding 166,000 (as of January 2023).
+        </p>
+
+
+    </section>
+    <section class="section5">
+        <h3>Shows</h3>
+        <div class="CardHolder">
+            <div class="card">
+                <div class="note">
+                    <div>
+                        <p> Elizabeth Jordan
+                        </p>
+                    </div>
+                    <div>
+                        <p>Season 10 - Ep. 26</p>
+                    </div>
+                </div>
+                <p class="programme">This is programme 26 of season <br> 10, published on 29th June 2024.</p>
+                <img src="./Frame 14.png" alt="shows" class="frame">
+
+            </div>
+            <div class="card">
+                <div class="note">
+                    <div>
+                        <p> Elizabeth Jordan
+                        </p>
+                    </div>
+                    <div>
+                        <p>Season 10 - Ep. 26</p>
+                    </div>
+                </div>
+                <p class="programme">This is programme 26 of season <br>10, published on 29th June 2024.</p>
+                <img src="./Frame 14.png" alt="shows" class="frame">
+
+            </div>
+            <div class="card">
+                <div class="note">
+                    <div>
+                        <p> Elizabeth Jordan
+                        </p>
+                    </div>
+                    <div>
+                        <p>Season 10 - Ep. 26</p>
+                    </div>
+                </div>
+                <p class="programme">This is programme 26 of season <br>10, published on 29th June 2024.</p>
+                <img src="./Frame 14.png" alt="shows" class="frame">
+
+            </div>
+            <div class="card">
+                <div class="note">
+                    <div>
+                        <p> Elizabeth Jordan
+                        </p>
+                    </div>
+                    <div>
+                        <p>Season 10 - Ep. 26</p>
+                    </div>
+                </div>
+                <p class="programme">This is programme 26 of season<br> 10, published on 29th June 2024.</p>
+                <img src="./Frame 14.png" alt="shows" class="frame">
+
+            </div>
+
+        </div>
+        <button class="BTN3">Explore</button>
+
+    </section>
+    <section class="section6">
+        <h1>Blog Posts</h1>
+        <div class="cardNew">
+            <img src="./NewLogo.png" alt="logo" class="horzN">
+            <div class="subcardNew">
+                <div>
+                    <img src="./NewSeason.png" alt="season" />
+
+                </div>
+                <div>
+                    <h4>New Season & New Presenter </h4>
+                    <p>
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum <br> tristique. Duis cursus, mi
+                        quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                    </p>
+                    <img src="./SeasonLogo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+        <div class="card2">
+
+            <div class="subcardNew">
+                <div>
+                    <img src="./card2.jpg" alt="season" />
+
+                </div>
+                <div>
+                    <h4>Summer Break 2024</h4>
+                    <p>
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum <br> tristique. Duis cursus, mi
+                        quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                    </p>
+                    <img src="./SeasonLogo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+        <div class="card2">
+
+            <div class="subcardNew">
+                <div>
+                    <img src="./card3.png" alt="season" />
+
+                </div>
+                <div>
+                    <h4>Overcoming self-doubt and imposter syndrome </h4>
+                    <p>
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum <br> tristique. Duis cursus, mi
+                        quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                    </p>
+                    <img src="./SeasonLogo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <button class="BTN4">Load more Blog </button>
+
+    </section>
+    <section class="section7">
+        <div class="Newsletter">
+            <img src="./Newsletter.jfif" alt=" newsletter">
+
+        </div>
+        <div class="CardNews">
+            <h2> Stay Ahead, Stay Informed!</h2>
+            <p class="para"> Our newsletter is packed with insights, inspiration, and expert advice, it's the ultimate
+                tool for<br>
+                leveling up your life. <br>
+                Don't miss out – sign up today!</p>
+            <span>
+
+                <input type="text" placeholder="Enter your email">
+                <button> Sign UP</button>
+            </span>
+            <p>
+                By clicking Sign Up you're confirming that you agree with our
+                <a href=""> Terms and Conditions.</a>
+
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
